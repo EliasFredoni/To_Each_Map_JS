@@ -157,7 +157,7 @@ let celsius = fahrenheit.map((berechnung) => {
     return berechnung - 1.8;
 });
 
-console.log(celsius);
+console.log(celsius); //?
 
 /*
 Gefrierpunkt von Wasser genau 180 Grad auseinander
@@ -204,10 +204,13 @@ let checkNumber = [
     78
 ];
 
-let wenn = checkNumber.forEach((dann) => {
+let wenn = [] // ab da an, in nächster Zeile weiter coden!
+checkNumber.forEach((dann) => {
     if (checkNumber % 3 === 0) {
-        checkNumber + 100;
-        return dann.push();
+        checkNumber.push(dann + 100);
+    }
+    else {
+        wenn.push(dann);
     }
 });
 
